@@ -31,7 +31,12 @@ export class AuthService {
   }
 
   isLoggedIn(): boolean {
-    return this.isAuthenticated;
+    // return this.isAuthenticated;
+    if (localStorage.getItem("username")) {
+      this.isAuthenticationSubject.next(true);  // Notify to the Subscribers
+      return true;
+    }
+    return false;
   }
 
 }

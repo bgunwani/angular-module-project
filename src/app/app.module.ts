@@ -9,6 +9,8 @@ import { ProtectedComponent } from "./protected/protected.component";
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { ContactComponent } from "./contact/contact.component";
+import { TemplateDrivenComponent } from "./template-driven/template-driven.component";
+import { ReactiveComponent } from "./reactive/reactive.component";
 
 
 @NgModule({
@@ -17,9 +19,13 @@ import { ContactComponent } from "./contact/contact.component";
         ProtectedComponent,
         HomeComponent,
         AboutComponent,
-        ContactComponent
+        ContactComponent,
+        TemplateDrivenComponent,
+        ReactiveComponent
     ],
-    imports: [FormsModule, BrowserModule, RouterModule.forRoot(routes)],
+    imports: [FormsModule,
+        BrowserModule,
+        RouterModule.forRoot(routes)],
     providers: [],
     bootstrap: [MainComponent]
 })

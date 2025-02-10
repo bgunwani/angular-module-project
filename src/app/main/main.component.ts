@@ -16,7 +16,6 @@ export class MainComponent {
     private _router: Router, private cd: ChangeDetectorRef) { }
 
   ngOnInit() {
-
     this._authService.isAuthenticated$.subscribe((status) => {
       this.status = status;
       this.cd.detectChanges();
@@ -27,7 +26,6 @@ export class MainComponent {
   }
 
   logout() {
-
     this._authService.isAuthenticated$.subscribe((status) => {
       this.status = status;
       this.cd.detectChanges();

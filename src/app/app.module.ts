@@ -3,7 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { MainComponent } from "./main/main.component";
 import { RouterModule } from "@angular/router";
 import { routes } from "./app.routes";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { LoginComponent } from "./login/login.component";
 import { ProtectedComponent } from "./protected/protected.component";
 import { HomeComponent } from "./home/home.component";
@@ -23,7 +23,9 @@ import { ReactiveComponent } from "./reactive/reactive.component";
         TemplateDrivenComponent,
         ReactiveComponent
     ],
-    imports: [FormsModule,
+    imports: [
+        FormsModule,
+        ReactiveFormsModule,
         BrowserModule,
         RouterModule.forRoot(routes)],
     providers: [],

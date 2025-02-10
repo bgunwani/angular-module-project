@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  userObj: any = {
+    name: 'king kochhar',
+    amount: 24334000.567895432
+  }
+
 }

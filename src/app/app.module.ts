@@ -11,6 +11,7 @@ import { AboutComponent } from "./about/about.component";
 import { ContactComponent } from "./contact/contact.component";
 import { TemplateDrivenComponent } from "./template-driven/template-driven.component";
 import { ReactiveComponent } from "./reactive/reactive.component";
+import { WelcomePipe } from "./pipes/welcome.pipe";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ReactiveComponent } from "./reactive/reactive.component";
         AboutComponent,
         ContactComponent,
         TemplateDrivenComponent,
-        ReactiveComponent
+        ReactiveComponent,
+        WelcomePipe
     ],
     imports: [
         FormsModule,
